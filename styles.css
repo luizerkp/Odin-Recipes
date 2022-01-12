@@ -1,37 +1,86 @@
-html {
-    height: 100%;
-}
-body{
+html, body{
     margin: 0;
-    min-height: 100%;
+    height: 100%;
+    background-color: rgb(189, 189, 164);
+}
+body {
     display: flex;
     flex-direction: column;
 }
 main{
     overflow: auto;
-    padding-bottom: 25px;
+    flex: 1 0 auto;
 }
 
 p {
     font-family: verdana;
     font-size: 1.05em;
 }
-footer{
+.footer{
     position: relative;
     text-align:center;
     color:black;
     font-size:1em;
     left:0;
-    bottom:.50em;
-    height:25px;
-    margin-top: -25px;
-    clear: both;
+    flex-shrink: 0;
     width:100%;
 }
+/* very basic formatting for all headers */
 .header {
     font-weight: bold;
     font-style: italic;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(2, 11, 24, 0.685);
 
 }
+
+/* Menu layout and dropdown on hover funtionality */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+.menu-btn {
+    background-color: rgb(141, 148, 147);
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    font-size: 1em;
+    border: 1px;
+}
+.menu-pages {
+    display: none;
+    position: absolute;
+    background-color: dimgray;
+    min-width: 160px;
+    box-shadow: ghostwhite;
+    z-index: 1;
+}
+.menu-pages a {
+    color:mintcream;
+    padding: auto;
+    text-decoration: none;
+    display: block;
+}
+.menu-pages a:hover{
+    opacity: .5;
+}
+.menu:hover .menu-pages{display: block;}
+.menu:hover .menu-btn {opacity: .5;}
+
+/* Front page link img link funtionality to let user know they can click on it and layout */
+.img-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    flex: 24.5%;
+    max-width: 24.5%;
+}
+.column img {
+    width: 100%;
+}
+.this-img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.this-img:hover {opacity: 0.7;}
