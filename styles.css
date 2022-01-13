@@ -84,3 +84,15 @@ p {
     transition: 0.3s;
 }
 .this-img:hover {opacity: 0.7;}
+
+.rep-img {
+    max-width:100%;
+    height: auto;
+    float: left;
+}
+.list {
+    float: right;
+}
+.text {
+    padding: 6px;
+}
