@@ -68,7 +68,7 @@ p {
 .menu:hover .menu-btn {opacity: .5;}
 
 /* Front page link img link funtionality to let user know they can click on it and layout */
-.img-links {
+.container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -78,6 +78,10 @@ p {
 }
 .column img {
     width: 100%;
+}
+.remainder{
+    flex:74.5%;
+    max-width: 74.5%;
 }
 .this-img {
     cursor: pointer;
@@ -90,9 +94,22 @@ p {
     height: auto;
     float: left;
 }
-.list {
-    float: right;
-}
+
 .text {
     padding: 6px;
+}
+.notes {
+    font-size: small;
+    font-weight: bold;
+    padding-left: 3em;
+}
+.ul-list {
+    list-style-type: square;
+    list-style-position: outside;
+}
+.ul-list li {
+    margin-bottom: 6px;
+}
+ol li {
+    margin-bottom: 6px;
 }
