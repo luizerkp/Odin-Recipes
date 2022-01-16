@@ -1,8 +1,8 @@
-/* Main layout format */
+
 html, body{
     margin: 0;
     height: 100%;
-    background-color: rgb(189, 189, 164);
+    background-color: rgb(233, 233, 225);
 }
 body {
     display: flex;
@@ -40,25 +40,30 @@ p {
 .menu {
     position: relative;
     display: inline-block;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 .menu-btn {
-    background-color: rgb(141, 148, 147);
-    color: rgb(0, 0, 0);
+    background-color: rgb(204, 204, 199);
+    color: rgb(27, 27, 27);
     padding: 8px;
     font-size: 1em;
     border: 1px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 .menu-pages {
     display: none;
     position: absolute;
-    background-color: dimgray;
+    background-color: rgb(204, 204, 199);
     min-width: 160px;
-    box-shadow: ghostwhite;
+    box-shadow: rgb(0, 0, 0);
     z-index: 1;
 }
 .menu-pages a {
-    color:mintcream;
+    color:rgb(0, 0, 0);
     padding: auto;
+    padding-bottom: .5em;
     text-decoration: none;
     display: block;
 }
